@@ -1,0 +1,9 @@
+1. a) sudo useradd -m -d /home/nikhil -s /bin/sh nikhil
+      cat /etc/passwd
+   b) sudo chage -M 9 -W 2 nikhil
+      sudo chage -E 2025-10-03 nikhil
+   c) sudo visudo
+      nikhil ALL=(ALL) NOPASSWD: /bin/systemctl start cron, /bin/systemctl stop cron, /bin/systemctl restart cron, /bin/systemctl status cron
+
+2. sudo mkdir /nikhil
+   sudo useradd -d /nikhil nikil
