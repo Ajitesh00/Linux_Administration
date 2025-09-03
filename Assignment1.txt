@@ -1,0 +1,14 @@
+1. du -ah ~| sort -rh | head -n 5
+2. sudo mkdir new
+   sudo chmod 1777 new
+
+3. sudo useradd shubham
+   cat /etc/passwd
+   sudo usermod -aG adm shubham
+   cat /etc/passwd
+   a)mkdir data
+     sudo chown shubham:adm data
+     ls -l
+   b)sudo chown -R shubham:adm data
+     ls -l
+      
